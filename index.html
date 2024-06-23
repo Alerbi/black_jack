@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Black Jack</title>
+  </head>
+  <body>
+    <div class="firstSite">
+      <div class="content">
+        <div class="betTitle">PLACE YOUR BETS</div>
+
+        <div class="totalBetDiv">
+          <div class="firstTotal">
+            <p class="totalP">TOTAL</p>
+            <p class="totalGeld">1500</p>
+          </div>
+          <div class="firstBet">
+            <p class="betP">BET</p>
+            <p class="betGeld">0</p>
+          </div>
+          <img src="start.jpg" class="startImg" />
+        </div>
+      </div>
+      <div class="tokenDiv">
+        <img src="token10.jpg" class="token10" />
+        <img src="token50.jpg" class="token50" />
+        <img src="token100.jpg" class="token100" />
+        <img src="token500.jpg" class="token500" />
+      </div>
+    </div>
+
+    <div class="welcome">
+      <p class="welcomeP">Press any key</p>
+    </div>
+
+    <div class="secondSite">
+      <p class="scndTotalSign">Total: <span class="secondTotal">0</span></p>
+      <p class="scndBetSign">Bet: <span class="secondBet">0</span></p>
+      <div class="scndSiteContainer">
+        <div class="hitSide">
+          <p class="playersScore">0</p>
+          <div class="playersCards">
+            <img src="2.jpg" class="playersFirstCard" />
+            <img src="3.jpg" class="playersScndCard" />
+            <img src="4.jpg" class="playersThirdCard" />
+            <img src="5.jpg" class="playersFourthCard" />
+            <img src="6.jpg" class="playersFifthCard" />
+          </div>
+          <button class="hitBtn">HIT</button>
+        </div>
+        <button class="newGameBtn">NEXT GAME</button>
+        <div class="standSite">
+          <p class="dealersScore">0</p>
+          <div class="dealersCards">
+            <img src="2.jpg" class="dealersFirstCard" />
+            <img src="backSide.jpg" class="dealersScndCard" />
+            <img src="3.jpg" class="dealersThirdCard" />
+            <img src="4.jpg" class="dealersFourthCard" />
+            <img src="5.jpg" class="dealersFifthCard" />
+          </div>
+          <button class="standBtn">STAND</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gameOver hidden">BET LOST</div>
+
+    <div class="win hidden">YOU WON</div>
+
+    <div class="draw hidden">DRAW</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
